@@ -1246,7 +1246,7 @@ PROMPT argument and call this function interactively in the composition buffer."
 ;; Functions for vmpc-conditions:
 ;; -------------------------------------------------------------------
 
-(defun vmpc-none-true-yet (&optional &rest exceptions)
+(defun vmpc-none-true-yet (&rest exceptions)
   "True if none of the previous evaluated conditions was true.
 This is a condition that can appear in `vmpc-conditions'.  If EXCEPTIONS are
 specified, it means none were true except those.  For example, if you wanted
@@ -1261,16 +1261,16 @@ matched."
       'nil)
      ((<= lentc lenex)
       (let ((i 0) (j 0) (k 0))
-	(while (< i lenex)
-	  (setq k 0)
-	  (while (< k lentc)
-	    (if (equal (nth i exceptions) (nth k vmpc-true-conditions))
-		(setq j (1+ j)))
-	    (setq k (1+ k)))
-	  (setq i (1+ i)))
-	(if (equal j lentc)
-	    't
-	  'nil))))))
+	      (while (< i lenex)
+	        (setq k 0)
+	        (while (< k lentc)
+	          (if (equal (nth i exceptions) (nth k vmpc-true-conditions))
+		            (setq j (1+ j)))
+	          (setq k (1+ k)))
+	        (setq i (1+ i)))
+	      (if (equal j lentc)
+	          't
+	        'nil))))))
 
 (defun vmpc-other-cond (condition)
   "Return true if the specified CONDITION in `vmpc-conditions' matched.
