@@ -105,6 +105,7 @@
 
 (provide 'vm-avirtual)
 
+(require 'vm-macro)
 (require 'vm-virtual)
 
 (eval-when-compile

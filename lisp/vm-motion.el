@@ -23,6 +23,8 @@
 
 (provide 'vm-motion)
 
+(require 'vm-macro)
+
 (eval-when-compile
   (require 'vm-misc)
   (require 'vm-minibuf)

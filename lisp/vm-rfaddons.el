@@ -60,6 +60,8 @@
 
 (provide 'vm-rfaddons)
 
+(require 'vm-macro)
+
 (eval-when-compile
   (require 'vm-misc)
   (require 'vm-folder)

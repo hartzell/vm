@@ -23,6 +23,8 @@
 
 (provide 'vm-pop)
 
+(require 'vm-macro)
+
 ;; For function declarations
 (eval-when-compile
   (require 'vm-misc)

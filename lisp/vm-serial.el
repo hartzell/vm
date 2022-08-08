@@ -74,6 +74,7 @@
 (provide 'vm-serial)
  
 (require 'vm-reply)
+(require 'vm-macro)
 
 (defgroup vm-serial nil
   "Sending personalized serial mails and getting message templates."

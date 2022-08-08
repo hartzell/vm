@@ -25,6 +25,8 @@
 
 (provide 'vm-imap)
 
+(require 'vm-macro)
+
 (eval-when-compile 
   (require 'sendmail)
   (require 'vm-misc))

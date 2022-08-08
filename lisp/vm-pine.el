@@ -85,6 +85,8 @@
 ;;; Code:
 
 (provide 'vm-pine)
+
+(require 'vm-macro)
  
 (eval-when-compile
   (require 'vm-misc)

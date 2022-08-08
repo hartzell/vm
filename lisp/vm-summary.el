@@ -25,6 +25,8 @@
 
 (provide 'vm-summary)
 
+(require 'vm-macro)
+
 (eval-and-compile
   (require 'vm-misc)
   (require 'vm-crypto)

@@ -43,6 +43,8 @@
 
 (provide 'vm-grepmail)
 
+(require 'vm-macro)
+
 (eval-and-compile
   (require 'vm-misc)
   (require 'vm-minibuf)

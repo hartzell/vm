@@ -29,6 +29,7 @@
 (provide 'vm)
 
 (require 'vm-version)
+(require 'vm-macro)
 
 (defvar enable-multibyte-characters)
 

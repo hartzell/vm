@@ -23,6 +23,8 @@
 
 (provide 'vm-mime)
 
+(require 'vm-macro)
+
 (eval-and-compile
   (require 'vm-misc))
 

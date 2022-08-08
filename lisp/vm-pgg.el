@@ -87,6 +87,10 @@
 
 ;;; Code:
 
+(provide 'vm-pgg)
+
+(require 'vm-macro)
+
 ;; handle missing pgg.el gracefully
 (eval-and-compile
   (if (and (boundp 'byte-compile-current-file) byte-compile-current-file)
