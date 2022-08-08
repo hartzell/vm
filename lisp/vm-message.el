@@ -25,6 +25,7 @@
 (provide 'vm-message)
 
 (require 'vm-macro)
+(require 'cl)
 
 (declare-function vm-mime-encode-words-in-string "vm-mime" (string))
 (declare-function vm-reencode-mime-encoded-words-in-string
