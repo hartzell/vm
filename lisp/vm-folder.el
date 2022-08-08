@@ -44,6 +44,8 @@
   (require 'vm-thread)
   (require 'vm-pop)
   (require 'vm-imap)
+  (require 'vm-message)
+  (require 'vm-sort)
 )
 
 ;; vm-xemacs.el is a fake file to fool the Emacs 23 compiler
